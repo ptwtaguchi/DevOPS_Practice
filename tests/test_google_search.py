@@ -5,7 +5,7 @@ from pages.google_search_page import GoogleSearchPage
 @pytest.fixture(scope="function")
 def setup():
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False)  # ヘッドレスモードをオフに
+        browser = p.chromium.launch(headless=True)  # ヘッドレスモードをオフに
         context = browser.new_context()
         page = context.new_page()
         yield page
