@@ -22,3 +22,6 @@ def test_google_search_ptw(setup):
     except Exception as e:
         page.screenshot(path="error_screenshot.png")  # エラー時にスクリーンショットを撮る
         raise e
+
+def dammy():
+    pass
